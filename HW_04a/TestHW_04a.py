@@ -10,6 +10,9 @@ class TestRepo(unittest.TestCase):
     def test_repo_2(self):
         self.assertEqual(search_repo('ldomadia'), 15)
 
+    def test_repo_3(self):
+        self.assertEqual(search_repo('luis28ng'), 1)
+
 
 if __name__ == '__main__':
     unittest.main()
