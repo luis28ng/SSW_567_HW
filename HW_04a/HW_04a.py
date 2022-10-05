@@ -6,7 +6,6 @@ import requests
 def search_repo(the_username):
     repo = []
     link = 'https://api.github.com/users/' + the_username + '/repos'
-    print(link)
     github_data = requests.get(link)
     data = github_data.json()
     for i in data:
@@ -16,7 +15,7 @@ def search_repo(the_username):
         github_data2 = requests.get(link2)
         data2 = github_data2.json()
         count = len(data2)
-        print(z, '---->', count)
+        print(z, '---->', 'commits: ', count)
     return len(repo)
 
 
