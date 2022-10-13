@@ -12,6 +12,7 @@ jobs:
       - run:
           command: |
             pip install pytest
+            pip install requests
             pytest --junitxml=test-results/junit.xml HW_02a/TestTrianglesSolution.py
             pytest --junitxml=test-results/junit.xml HW_04a/TestHW_04a.py
             pytest --junitxml=test-results/junit.xml HW_05a/TestHW_05a.py
